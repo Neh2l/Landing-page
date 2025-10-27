@@ -7,7 +7,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  background-color: #0a0f2c;
+  /* background-color: #0a0f2c; */
 }
 
 .hero {
@@ -65,7 +65,7 @@ body {
 }
 
 .download-btn:hover {
-  background: #00b0d9;
+  background: #00b0d9;    
 }
 
 .hero-content {
@@ -220,4 +220,178 @@ body {
     margin-top: 30px;
   }
 }
+
+
+.features-section {
+  position: relative;
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00303f;
+  line-height: 1.3;
+}
+
+.main-title span {
+  color: #002d3a;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  max-width: 500px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+/* body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #00b8b0;
+  color: #000;
+  overflow-x: hidden;
+} */
+
+.app-section {
+  /* background: linear-gradient(180deg, #00b8b0 0%, #00b8b0 100%); */
+  position: relative;
+  padding: 60px 20px 100px;
+  overflow: hidden;
+}
+
+.app-section::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
+  background: url('https://www.transparenttextures.com/patterns/lines-stripes.png') repeat;
+  opacity: 0.05;
+}
+.app-section h2{
+  color: #00d4ff;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0a2a35;
+  line-height: 1.3;
+}
+
+h1 span {
+  color: #00303f;
+  opacity: 0.8;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 80px;
+  max-width: 550px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 120px 0;
+  gap: 50px;
+}
+
+.feature img {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 25px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.feature img:hover {
+  transform: translateY(-10px);
+}
+
+.text {
+  max-width: 400px;
+}
+
+.text h2 {
+  font-size: 2rem;
+color: #00bcd4; 
+ font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text p {
+  color: #000;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: #fff;
+  color: #000;
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  letter-spacing: 0.5px;
+}
+
+.feature-left {
+  flex-direction: row;
+}
+
+.feature-right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.app-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1) 1px, transparent 1px),
+              radial-gradient(circle at 80% 60%, rgba(255,255,255,0.1) 1px, transparent 1px);
+  background-size: 250px 250px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+@media (max-width: 900px) {
+  .feature {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .text {
+    text-align: center !important;
+  }
+
+  .feature img {
+    margin-bottom: 20px;
+  }
+}
+
 
