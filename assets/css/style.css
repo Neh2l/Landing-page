@@ -395,3 +395,134 @@ color: #00bcd4;
 }
 
 
+.pricing-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.pricing-section .title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #002b49;
+}
+
+.pricing-section .title span {
+  color: #11b0c8;
+}
+
+.subtitle {
+  max-width: 600px;
+  margin: 15px auto 50px;
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 30px 25px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #002b49;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card .desc {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #002b49;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.card ul {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.card ul li {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: #444;
+  position: relative;
+  padding-left: 18px;
+}
+
+.card ul li::before {
+  content: "✔";
+  color: #11b0c8;
+  font-size: 0.8rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.card button {
+  background: #002b49;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card button:hover {
+  background: #11b0c8;
+}
+
+.card.highlight {
+  background: linear-gradient(135deg, #c8f4ff 0%, #11b0c8 100%);
+  color: #fff;
+  border: none;
+}
+
+.card.highlight h3,
+.card.highlight .price {
+  color: #fff;
+}
+
+.card.highlight button {
+  background: #002b49;
+}
+
+.card.highlight button:hover {
+  background: #004b7a;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 60px 20px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .pricing-cards {
+    gap: 20px;
+  }
+}
