@@ -706,3 +706,102 @@ body {
     padding: 25px 28px;
   }
 }
+.users {
+  color: #000;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.users h2 {
+  margin-bottom: 40px;
+  font-size: 3rem;
+  font-weight: bold;
+  
+}
+
+.usersContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.usersContent .left img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+}
+
+.usersContent .right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.usersContent .right h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.usersContent .right p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.userimgs {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userimgs img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .usersContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .usersContent .right {
+    width: 90%;
+    text-align: center;
+  }
+
+  .usersContent .left img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .users h2 {
+    font-size: 1.6rem;
+  }
+
+  .usersContent .right h3 {
+    font-size: 1.2rem;
+  }
+
+  .usersContent .right p {
+    font-size: 0.95rem;
+  }
+
+  .userimgs img {
+    width: 40px;
+    height: 40px;
+  }
+}
