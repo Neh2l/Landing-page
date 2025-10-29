@@ -247,6 +247,9 @@ body {
   .users-bubble {
     display: none;
   }
+  .small-btn {
+    display: none;
+  }
 }
 @media (max-width: 480px) {
   .hero-content h1 {
@@ -260,6 +263,7 @@ body {
     padding: 10px 20px;
   }
 }
+
 .users-bubble {
   width: 20%;
   z-index: 100;

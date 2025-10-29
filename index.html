@@ -13,15 +13,15 @@
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <section class="hero">
+    <section id="hero" class="hero">
       <nav class="navbar">
         <div class="nav-left">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">How it Works</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Plans</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#how">How it Works</a></li>
+            <li><a href="#app">Features</a></li>
+            <li><a href="#pricing">Plans</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
 
@@ -103,7 +103,7 @@
       <div class="star star-5">✦</div>
       <div class="star star-6">✦</div>
     </section>
-    <section class="how-it-works" data-aos="fade-up">
+    <section id="how" class="how-it-works" data-aos="fade-up">
       <div class="container">
         <div class="text-side">
           <h2 class="special-text">How DuSeat Makes Investing Simple</h2>
@@ -166,7 +166,7 @@
       </div>
     </section>
 
-    <section class="app-section" data-aos="fade-up">
+    <section id="app" class="app-section" data-aos="fade-up">
       <div class="container">
         <!-- <div>
           <h1 class="special-text">
@@ -269,7 +269,7 @@
         </div>
       </div>
     </section>
-    <section class="pricing-section" data-aos="fade-up">
+    <section id="pricing" class="pricing-section" data-aos="fade-up">
       <div class="container">
         <h2 class="special-text">Our Awesome Pricing Plans</h2>
         <p class="subtitle">
@@ -342,7 +342,7 @@
         </div>
       </div>
     </section>
-    <section class="faq-section" data-aos="fade-up">
+    <section id="faq" class="faq-section" data-aos="fade-up">
       <div class="container">
         <p class="section-label">FAQ</p>
         <h2 class="section-title">Frequently Asked Questions</h2>
@@ -534,9 +534,9 @@
         offset: 120,
         delay: 0,
         duration: 400,
-        easing: "ease",
+        easing: 'ease',
         once: false,
-        mirror: false,
+        mirror: false
       });
     </script>
   </body>
