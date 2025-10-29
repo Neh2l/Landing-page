@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@
   --secondary-color: rgba(6, 17, 62, 1);
   --white-color: rgba(255, 255, 255, 1);
   --text-color: rgba(0, 0, 0, 1);
-  --black-color:var(--black-color);
+  --black-color: var(--black-color);
 }
 h2 {
   font-size: 70px;
@@ -22,24 +22,28 @@ h2 {
     var(--secondary-color),
     var(--primary-color),
     var(--secondary-color)
-  ); 
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: var(--text-color);
 }
 
 .hero {
   position: relative;
   height: 100vh;
-  background: radial-gradient(circle at center bottom, var(--primary-color) 5%, var(--secondary-color) 65%);
+  background: radial-gradient(
+    circle at center bottom,
+    var(--primary-color) 5%,
+    var(--secondary-color) 65%
+  );
   overflow: hidden;
 }
 
 .hero::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background-image: linear-gradient(
@@ -147,7 +151,7 @@ body {
 }
 
 .highlight::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -3px;
@@ -213,6 +217,95 @@ body {
   width: 680px;
   border-radius: 20px;
 }
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 40px;
+  }
+
+  .nav-left ul {
+    gap: 18px;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  .subtext {
+    font-size: 1rem;
+    max-width: 500px;
+  }
+
+  .phones img {
+    width: 520px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 25px;
+  }
+
+  .nav-left ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .logo-bg img {
+    width: 80px;
+  }
+
+  .download-btn {
+    display: none;
+  }
+
+  .hero {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .subtext {
+    font-size: 0.95rem;
+    max-width: 90%;
+  }
+
+  .store-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .phones img {
+    width: 90%;
+  }
+
+  .right-buttons,
+  .users-bubble {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .subtext {
+    font-size: 0.9rem;
+  }
+
+  .store-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
 .users-bubble {
   width: 20%;
   z-index: 100;
@@ -220,7 +313,6 @@ body {
   top: 65%;
   left: 6%;
 }
-
 
 .right-buttons {
   position: absolute;
@@ -268,16 +360,15 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-.circle-icon .inner{
+.circle-icon .inner {
   background-color: var(--black-color);
   color: var(--black-color);
   width: 20px;
   height: 20px;
-    border-radius: 50%;
-    z-index: 5;
-    line-height: 20px;
-    text-align: center;
-
+  border-radius: 50%;
+  z-index: 5;
+  line-height: 20px;
+  text-align: center;
 }
 
 .circle-icon:hover {
@@ -419,7 +510,7 @@ body {
 }
 
 .app-section::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 50%;
@@ -438,7 +529,7 @@ body {
 }
 
 .app-section::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -470,7 +561,7 @@ h1 span {
 }
 
 .subtitle {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   color: #555;
   margin: 10px auto 0;
@@ -628,7 +719,7 @@ h1 span {
 }
 
 .card ul li::before {
-  content: "✔";
+  content: '✔';
   color: #11b0c8;
   font-size: 0.8rem;
   position: absolute;
@@ -840,8 +931,9 @@ h1 span {
   background: #0f1f38;
   border-radius: 24px;
   padding: 60px 50px;
-  max-width: 900px;
-  width: 100%;
+  width: 1200px;
+  height: 50vh;
+  max-width: 100%;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   z-index: 1;
