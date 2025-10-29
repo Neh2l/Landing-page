@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <section class="hero">
@@ -91,8 +92,18 @@
           <button class="small-btn social">Social Media</button>
         </div>
       </div>
+
+      <div class="glow"></div>
+      <div class="orbit orbit-1"></div>
+      <div class="orbit orbit-2"></div>
+      <div class="star star-1">✦</div>
+      <div class="star star-2">✦</div>
+      <div class="star star-3">✦</div>
+      <div class="star star-4">✦</div>
+      <div class="star star-5">✦</div>
+      <div class="star star-6">✦</div>
     </section>
-    <section class="how-it-works">
+    <section class="how-it-works" data-aos="fade-up">
       <div class="container">
         <div class="text-side">
           <h2 class="special-text">How DuSeat Makes Investing Simple</h2>
@@ -155,20 +166,33 @@
       </div>
     </section>
 
-    <section class="app-section">
+    <section class="app-section" data-aos="fade-up">
       <div class="container">
-        <h1 class="special-text">
-          Discover the Power of Our
-          <br />
-          Real Estate App
-        </h1>
+        <!-- <div>
+          <h1 class="special-text">
+            Discover the Power of Our
+            <br />
+            Real Estate App
+          </h1>
 
-        <p class="subtitle">
-          Search properties by location and explore nearby facilities and
-          amenities with ease.
-        </p>
+          <p class="subtitle">
+            Search properties by location and explore nearby facilities and
+            amenities with ease.
+          </p>
+        </div> -->
+        <div class="desc">
+          <h2 class="special-text">
+            Discover the Power of Our
+            <br />
+            Real Estate App
+          </h2>
+          <p>
+            Search properties by location and explore nearby facilities and
+            amenities with ease.
+          </p>
+        </div>
 
-        <div class="feature feature-left">
+        <div class="feature feature-left" data-aos="fade-up">
           <img
             src="./assets/imgs/afc592592712be88789ce1581a04036120c334c9.png"
             alt="New Launch"
@@ -183,7 +207,7 @@
           </div>
         </div>
 
-        <div class="feature feature-right">
+        <div class="feature feature-right" data-aos="fade-up">
           <img
             src="./assets/imgs/f70532f72c9532301276d2b738fa5585012bcf07.png"
             alt="Road Show"
@@ -198,7 +222,7 @@
           </div>
         </div>
 
-        <div class="feature feature-left">
+        <div class="feature feature-left" data-aos="fade-up">
           <img
             src="./assets/imgs/a90edf9f768fec13f3dc848f6d9903a86c502fc9.png"
             alt="Agent Support"
@@ -213,7 +237,7 @@
           </div>
         </div>
 
-        <div class="feature feature-right">
+        <div class="feature feature-right" data-aos="fade-up">
           <img
             src="./assets/imgs/d6548095eab02693d681d840bf19955137e56894.png"
             alt="Market Insights"
@@ -228,7 +252,7 @@
           </div>
         </div>
 
-        <div class="feature feature-left">
+        <div class="feature feature-left" data-aos="fade-up">
           <img
             src="./assets/imgs/d6548095eab02693d681d840bf19955137e56894.png"
             alt="Agent to Agent"
@@ -245,7 +269,7 @@
         </div>
       </div>
     </section>
-    <section class="pricing-section">
+    <section class="pricing-section" data-aos="fade-up">
       <div class="container">
         <h2 class="special-text">Our Awesome Pricing Plans</h2>
         <p class="subtitle">
@@ -318,7 +342,7 @@
         </div>
       </div>
     </section>
-    <section class="faq-section">
+    <section class="faq-section" data-aos="fade-up">
       <div class="container">
         <p class="section-label">FAQ</p>
         <h2 class="section-title">Frequently Asked Questions</h2>
@@ -376,7 +400,7 @@
         </div>
       </div>
     </section>
-    <section class="users">
+    <section class="users" data-aos="fade-up">
       <h2 class="special-text">What our users say about Us?</h2>
       <div class="usersContent">
         <div class="left">
@@ -403,9 +427,9 @@
       </div>
     </section>
 
-    <section class="cta-section">
+    <section class="cta-section" data-aos="fade-up">
       <div class="cta-card">
-        <h1 class="cta-title">Ready To Get Started?</h1>
+        <h2 class="cta-title">Ready To Get Started?</h2>
         <p class="cta-text">
           Lorem Ipsum Dolor Sit Amet Consectetur. Sed Scelerisque Pellentesque
           Blandit Vitae Convallis Enim.
@@ -440,9 +464,8 @@
       <div class="footer-container">
         <div class="footer-brand">
           <a href="#" class="logo">
-            <div class="logo-icon">
-              <img src="assets/imgs/logo.png" alt="" />
-            </div>
+            <img src="assets/imgs/logo.png" alt="" width="100px" />
+
             Duseat
           </a>
           <div class="contact-item">
@@ -504,5 +527,17 @@
         Copyright 2025 Duseat.Com. All Rights Reserved
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120,
+        delay: 0,
+        duration: 400,
+        easing: "ease",
+        once: false,
+        mirror: false,
+      });
+    </script>
   </body>
 </html>

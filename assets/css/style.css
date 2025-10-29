@@ -142,6 +142,7 @@ body {
   line-height: 1.3;
   font-weight: 700;
   color: var(--white-color);
+  
 }
 
 .highlight {
@@ -547,21 +548,26 @@ body {
   z-index: 2;
 }
 
-h1 {
+/* h1 {
   font-size: 2.2rem;
   font-weight: 700;
   color: #0a2a35;
   line-height: 1.3;
   margin-bottom: 0.5rem;
-}
+} */
 
-h1 span {
+/* h1 span {
   color: #00303f;
   opacity: 0.8;
-}
+} */
 
+<<<<<<< HEAD
 .subtitle {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+=======
+/* .subtitle {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+>>>>>>> 4f909efe52bd8c0417d0d92f5ef8064308f0a005
   font-size: 1rem;
   color: #555;
   margin: 10px auto 0;
@@ -569,7 +575,17 @@ h1 span {
   line-height: 1.5;
   font-weight: 400;
   opacity: 0.9;
-}
+} */
+ .desc{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+ }
+ .desc p{
+  color: var(--text-color);
+  opacity: .5;
+ }
 
 .feature {
   display: flex;
