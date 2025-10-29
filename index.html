@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DuSeat Landing Page</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/imgs/logo.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -13,24 +14,37 @@
   <body>
     <section class="hero">
       <nav class="navbar">
-        <div class="logo">DuSeat</div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">How it Works</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Plans</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-        <button class="download-btn">Download App <span style="font-weight: bold; font-size: 20px;">&#8599;</span></button>
+        <div class="nav-left">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Plans</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-center">
+          <div class="logo-bg">
+            <img src="assets/imgs/logo.png" alt="logo" width="200px" />
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <button class="download-btn">
+            Download App
+            <span style="font-weight: bold; font-size: 20px">&#8599;</span>
+          </button>
+          <i class="fa-solid fa-bars menu-icon"></i>
+        </div>
       </nav>
 
       <div class="hero-content">
         <div class="hero-h1-p">
           <h1>
             Smart Investment Opportunities<br />
-            in the UAE<br />
-            <h1>Powered by <span class="highlight">Trusted Agents</span></h1>
-            <!-- <span class="highlight">Powered by Trusted Agents</span> -->
+            in the UAE<br />Powered by
+            <span class="highlight"> Trusted Agents</span>
           </h1>
           <p class="subtext">
             Discover high-return real estate investments tailored to your goals.
@@ -60,12 +74,28 @@
         <div class="phones">
           <img src="assets/imgs/Mobile Photos.png" alt="App Preview" />
         </div>
+
+        <div class="users-bubble">
+          <img src="assets/imgs/Users.png" alt="" />
+        </div>
+
+        <div class="right-buttons">
+          <div class="download-now">
+            <button class="small-btn">Download Now</button>
+            <div class="circle-icon">
+              <div class="inner">
+                <span style="font-weight: bold; font-size: 20px">&#8599; </span>
+              </div>
+            </div>
+          </div>
+          <button class="small-btn social">Social Media</button>
+        </div>
       </div>
     </section>
     <section class="how-it-works">
       <div class="container">
         <div class="text-side">
-          <h2>How <span>DuSeat</span> Makes Investing Simple</h2>
+          <h2 class="special-text">How DuSeat Makes Investing Simple</h2>
 
           <div class="features-grid">
             <div class="feature-box">
@@ -127,13 +157,10 @@
 
     <section class="app-section">
       <div class="container">
-        <h1 class="gradient-title">
-          <span class="line1">
-            <span class="dark">Discover</span>
-            <span class="accent">the Power of Our</span>
-          </span>
+        <h1 class="special-text">
+          Discover the Power of Our
           <br />
-          <span class="line2">Real Estate App</span>
+          Real Estate App
         </h1>
 
         <p class="subtitle">
@@ -220,9 +247,7 @@
     </section>
     <section class="pricing-section">
       <div class="container">
-        <h2 class="title">
-          Our <span>Awesome</span> Pricing <span>Plans</span>
-        </h2>
+        <h2 class="special-text">Our Awesome Pricing Plans</h2>
         <p class="subtitle">
           Discover the ideal plan to fuel your business growth. Our pricing
           options are carefully crafted to cater to businesses.
@@ -352,7 +377,7 @@
       </div>
     </section>
     <section class="users">
-      <h2>What our users say about Us?</h2>
+      <h2 class="special-text">What our users say about Us?</h2>
       <div class="usersContent">
         <div class="left">
           <img
@@ -367,10 +392,12 @@
             Transparent, Secure, And Stress-Free
           </p>
           <div class="userimgs">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
+            <img src="assets/imgs/user1.jpg" alt="" />
+            <img src="assets/imgs/user2.jpg" alt="" />
+            <img src="assets/imgs/user3.jpg" alt="" />
+            <img src="assets/imgs/user4.jpg" alt="" />
           </div>
+          <p>Omar Khalid</p>
         </div>
         <h4 class=""></h4>
       </div>
@@ -390,11 +417,15 @@
             alt="google-play_icon"
             class="google-play_icon"
           />
-          <img src="/assets/imgs/apple-logo.png" alt="apple-store_icon" class="apple-store_icon">
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17V6h2v8.17l3.59-3.58L17 12l-5 5z"
-            />
-          </svg>
+          <img
+            src="/assets/imgs/apple-logo.png"
+            alt="apple-store_icon"
+            class="apple-store_icon"
+          />
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17V6h2v8.17l3.59-3.58L17 12l-5 5z"
+          />
+          <!-- </svg> -->
         </a>
 
         <div class="glow"></div>
@@ -405,57 +436,73 @@
         <div class="star star-3">✦</div>
       </div>
     </section>
-    <div class="footer-container">
-      
-      <div class="footer-brand">
-        <a href="#" class="logo">
-          <div class="logo-icon"></div>
-          Duseat
-        </a>
-        <div class="contact-item">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          Duseat@Duseat.Com
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <img src="assets/imgs/logo.png" alt="" />
+            </div>
+            Duseat
+          </a>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+              />
+            </svg>
+            Duseat@Duseat.Com
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+              />
+            </svg>
+            +1234 456 678 89
+          </div>
         </div>
-        <div class="contact-item">
-          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-          +1234 456 678 89
+
+        <div class="footer-column">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Plans</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <p style="color: #6b7280; margin-bottom: 16px; font-size: 0.95rem">
+            Stay Up To Date
+          </p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="newsletter-input"
+              required
+            />
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
         </div>
       </div>
 
-      <div class="footer-column">
-        <h3>Links</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">How it Works</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Plans</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
+      <div class="copyright">
+        Copyright 2025 Duseat.Com. All Rights Reserved
       </div>
-
-      <div class="footer-column">
-        <h3>Legal</h3>
-        <ul>
-          <li><a href="#">Terms Of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Cookie Policy</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-column">
-        <h3>Newsletter</h3>
-        <p style="color:#6b7280; margin-bottom:16px; font-size:0.95rem;">Stay Up To Date</p>
-        <form class="newsletter-form">
-          <input type="email" placeholder="Your email" class="newsletter-input" required />
-          <button type="submit" class="newsletter-btn">Subscribe</button>
-        </form>
-      </div>
-
-    </div>
-
-    <div class="copyright">
-      Copyright 2025 Duseat.Com. All Rights Reserved
-    </div>
-  </footer>
+    </footer>
   </body>
 </html>
