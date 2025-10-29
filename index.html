@@ -11,6 +11,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="/assets/index.js"></script>
   </head>
   <body>
     <section id="hero" class="hero">
@@ -36,7 +38,7 @@
             Download App
             <span style="font-weight: bold; font-size: 20px">&#8599;</span>
           </button>
-          <i class="fa-solid fa-bars menu-icon"></i>
+          <i id="menu" class="fa-solid fa-bars menu-icon"></i>
         </div>
       </nav>
 
@@ -279,6 +281,7 @@
 
         <div class="pricing-cards">
           <div class="card">
+            <img src="/assets/imgs/Icon (1).png" alt="premium-subscription" />
             <h3>Free</h3>
             <p class="desc">
               Ideal for beginners who want to try the platform.
@@ -295,6 +298,7 @@
           </div>
 
           <div class="card">
+            <img src="/assets/imgs/Icon (1).png" alt="premium-subscription" />
             <h3>Pro Agent</h3>
             <p class="desc">
               Perfect for regular agents who want more visibility.
@@ -311,6 +315,7 @@
           </div>
 
           <div class="card">
+            <img src="/assets/imgs/Icon (1).png" alt="premium-subscription" />
             <h3>Elite Agent</h3>
             <p class="desc">For top agents looking for maximum exposure.</p>
             <h2 class="price">AED 349/mo</h2>
@@ -325,6 +330,7 @@
           </div>
 
           <div class="card highlight">
+            <img src="/assets/imgs/Icon.png" alt="premium-subscription" />
             <h3>Power Agent</h3>
             <p class="desc">
               The ultimate plan for maximum reach and visibility.
@@ -338,9 +344,11 @@
               <li>Featured placement</li>
             </ul>
             <button>Get Started</button>
+            <img src="/assets/imgs/Star 6.png" alt="star" class="star6" />
           </div>
         </div>
       </div>
+      <img src="/assets/imgs/Star 6.png" alt="star" />
     </section>
     <section id="faq" class="faq-section" data-aos="fade-up">
       <div class="container">
@@ -523,17 +531,5 @@
         Copyright 2025 Duseat.Com. All Rights Reserved
       </div>
     </footer>
-
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset: 120,
-        delay: 0,
-        duration: 400,
-        easing: 'ease',
-        once: false,
-        mirror: false
-      });
-    </script>
   </body>
 </html>
