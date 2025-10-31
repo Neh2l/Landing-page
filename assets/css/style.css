@@ -46,7 +46,7 @@ body {
   0%, 100% {
     background: radial-gradient(
       circle at center,
-      rgba(0, 0, 0, 0.35) 0%, 
+      rgba(0, 0, 0, 0.151) 0%, 
       var(--primary-color) 40%, 
       var(--secondary-color) 80%
     );
@@ -166,7 +166,7 @@ body {
   border-radius: 60%;
 }
 .subtext {
-  color: #a8c7e6;
+  color: #0000003b;
   font-size: 1rem;
   margin-top: 15px;
 }
@@ -393,6 +393,7 @@ body {
   font-weight: 700;
   margin-bottom: 40px;
   color: #002b49;
+  text-align:center ;
 }
 
 .how-it-works .image-side {
