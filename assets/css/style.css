@@ -33,19 +33,41 @@ body {
   position: relative;
   height: 100vh;
   background: radial-gradient(
-    circle at center bottom,
-    var(--primary-color) 5%,
-    var(--secondary-color) 65%
+    circle at center,
+    rgba(0, 0, 0, 0.35) 0%, 
+    var(--primary-color) 40%, 
+    var(--secondary-color) 80%
   );
   overflow: hidden;
+  animation: glowPulse 4s ease-in-out infinite;
 }
+
+@keyframes glowPulse {
+  0%, 100% {
+    background: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0.35) 0%, 
+      var(--primary-color) 40%, 
+      var(--secondary-color) 80%
+    );
+  }
+  50% {
+    background: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0.15) 0%,  
+      var(--primary-color) 35%, 
+      var(--secondary-color) 75%
+    );
+  }
+}
+
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.05) 1px,
-      transparent 1px
+      transparent 1px  
     ),
     linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 50px 50px;
@@ -439,7 +461,7 @@ body {
   justify-content: center;
   font-size: 22px;
   margin-bottom: 15px;
-}
+}    
 
 @media (max-width: 992px) {
   .how-it-works {
@@ -457,7 +479,7 @@ body {
   .how-it-works .image-side img {
     width: 320px;
   }
-}
+}    
 /* ======================================= APP SECTION ================================== */
 .app-section {
   position: relative;
@@ -951,6 +973,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+/* ===============================  CTA section =================================================== */
 .cta-section {
   display: flex;
   align-items: center;
@@ -959,6 +982,26 @@ body {
   padding: 60px 20px;
   width: 100%;
   margin-bottom: 70px;
+  nimation: glow 4s ease-in-out infinite;
+
+}
+@keyframes glow {
+  0%, 100% {
+    background: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0.35) 0%, 
+      var(--primary-color) 40%, 
+      var(--secondary-color) 80%
+    );
+  }
+  50% {
+    background: radial-gradient(
+      circle at center,
+      rgba(0, 0, 0, 0.15) 0%,  
+      var(--primary-color) 35%, 
+      var(--secondary-color) 75%
+    );
+  }
 }
 .cta-card {
   position: relative;
