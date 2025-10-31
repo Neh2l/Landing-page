@@ -736,7 +736,7 @@
       wrapper.insertBefore(lastClone, wrapper.firstChild);
 
       allSlides = document.querySelectorAll(".feature");
-      wrapper.style.transform = translateX(`-${index * 100}%`);
+      wrapper.style.transform = `translateX(-${index * 100}%)`;
     }
 
     initMobileLoop();
@@ -745,7 +745,7 @@
       if (!isMobile()) return; // Stop slider on desktop
 
       wrapper.style.transition = "transform .35s ease";
-      wrapper.style.transform = translateX(`-${index * 100}%`);
+      wrapper.style.transform = `translateX(-${index * 100}%)`;
       isTransitioning = true;
     }
 
@@ -769,13 +769,13 @@
       if (allSlides[index].id === "first-clone") {
         wrapper.style.transition = "none";
         index = 1;
-        wrapper.style.transform = translateX(`-${index * 100}%`);
+        wrapper.style.transform = `translateX(-${index * 100}%)`;
       }
 
       if (allSlides[index].id === "last-clone") {
         wrapper.style.transition = "none";
         index = allSlides.length - 2;
-        wrapper.style.transform = translateX(`-${index * 100}%`);
+        wrapper.style.transform = `translateX(-${index * 100}%)`;
       }
     });
 
@@ -783,9 +783,9 @@
     window.addEventListener("resize", () => {
       if (!isMobile()) {
         wrapper.style.transition = "none";
-        wrapper.style.transform = "none";
+        wrapper.style.transform = "none"; // رجع الديزاين الطبيعي
       } else {
-        window.location.reload();
+        window.location.reload(); // نعيد تهيئة السلايدر للموبايل
       }
     });
   </script>

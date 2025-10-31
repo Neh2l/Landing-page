@@ -493,9 +493,6 @@ body {
   background-image: url(../imgs/Frame\ 1000005090.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
-  text-align: left;
-  /* padding: 10rem 5rem; */
 }
 
 /* .app-section::before {
@@ -534,8 +531,6 @@ body {
   z-index: 2;
   text-align: center;
   margin-bottom: 70px;
-    text-align: left;
-
 }
 
 .special-text {
@@ -544,7 +539,6 @@ body {
   color: #0a2a35;
   line-height: 1.3;
   margin-bottom: 1rem;
-  text-align: left;
 }
 
 .special-paragraph {
@@ -553,7 +547,6 @@ body {
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;
-   text-align: left;
 }
 
 
@@ -570,7 +563,6 @@ body {
   justify-content: space-between;
   margin: 120px 0;
   gap: 50px;
-  text-align: left;
 }
 
 .feature img {
@@ -587,7 +579,6 @@ body {
 
 .text {
   max-width: 400px;
-  text-align: left;
 }
 
 .feature h2 {
@@ -595,7 +586,6 @@ body {
   color: #00bcd4;
   font-weight: 600;
   margin-bottom: 10px;
-  text-align: left;
 }
 
 .feature p {
@@ -603,7 +593,6 @@ body {
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 10px;
-  text-align: left;
 }
 
 .tag {
@@ -748,12 +737,12 @@ body {
   #nextBtn { right: 10px; }
 }
 
+/* على الشاشات الكبيرة استخبي الأزرار */
 @media (min-width: 901px) {
   .nav-btn {
     display: none;
   }
 }
-
 
 
 
