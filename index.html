@@ -11,8 +11,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body style="overflow-x: hidden; background-color: #f9fbfc">
     <!-- ======================================= HERO SECTION =========================================== -->
     <section id="hero" class="hero">
       <nav class="navbar">
@@ -104,10 +108,20 @@
       <div class="star star-5">✦</div>
       <div class="star star-6">✦</div>
     </section>
-    <!-- =============================== HOW IT WORKS SECTION ============================== -->
-    <section id="how" class="how-it-works" data-aos="fade-up">
-      <h2 class="special-text">How DuSeat Makes Investing Simple</h2>
 
+    <!-- =============================== HOW IT WORKS SECTION ============================== -->
+    <h2
+      class="special-text"
+      style="
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+        background-color: #d0d5d8;
+      "
+    >
+      How DuSeat Makes Investing Simple
+    </h2>
+    <section id="how" class="how-it-works" data-aos="fade-up">
       <div class="image-side">
         <img
           src="assets/imgs/a90edf9f768fec13f3dc848f6d9903a86c502fc9.png"
@@ -157,6 +171,7 @@
         </div>
       </div>
     </section>
+
     <!-- ========================================== APP SECTION =========================================    -->
     <section id="app" class="app-section" data-aos="fade-up">
       <div class="desc">
@@ -171,7 +186,7 @@
         </p>
       </div>
 
-      <div class="features-slider">
+      <!-- <div class="features-slider">
         <div class="feature feature-left" data-aos="fade-up">
           <img
             src="./assets/imgs/afc592592712be88789ce1581a04036120c334c9.png"
@@ -247,12 +262,176 @@
             <span class="tag">COMING SOON</span>
           </div>
         </div>
+   
+      </div> -->
+
+      <div class="features-slider">
+        <div class="slider-wrapper">
+          <div class="feature feature-left" data-aos="fade-up">
+            <img
+              src="./assets/imgs/afc592592712be88789ce1581a04036120c334c9.png"
+              alt="New Launch"
+            />
+            <div class="text">
+              <h2>New launch</h2>
+              <p>
+                Browse a wide range of apartments, villas, and commercial spaces
+                across the UAE.
+              </p>
+              <span class="tag">COMING SOON</span>
+            </div>
+          </div>
+
+          <div class="feature feature-right" data-aos="fade-up">
+            <img
+              src="./assets/imgs/f70532f72c9532301276d2b738fa5585012bcf07.png"
+              alt="Road Show"
+            />
+            <div class="text">
+              <h2>Road Show</h2>
+              <p>
+                Search properties by location and explore nearby facilities and
+                amenities with ease.
+              </p>
+              <span class="tag">COMING SOON</span>
+            </div>
+          </div>
+
+          <div class="feature feature-left" data-aos="fade-up">
+            <img
+              src="./assets/imgs/a90edf9f768fec13f3dc848f6d9903a86c502fc9.png"
+              alt="Agent Support"
+            />
+            <div class="text">
+              <h2>Agent Support</h2>
+              <p>
+                Connect instantly with professional agents to get the best deals
+                and expert advice.
+              </p>
+              <span class="tag">COMING SOON</span>
+            </div>
+          </div>
+
+          <div class="feature feature-right" data-aos="fade-up">
+            <img
+              src="./assets/imgs/d6548095eab02693d681d840bf19955137e56894.png"
+              alt="Market Insights"
+            />
+            <div class="text">
+              <h2>Market Insights</h2>
+              <p>
+                Stay updated with the latest property trends, prices, and
+                investment opportunities.
+              </p>
+              <span class="tag">COMING SOON</span>
+            </div>
+          </div>
+
+          <div class="feature feature-left" data-aos="fade-up">
+            <img
+              src="./assets/imgs/d6548095eab02693d681d840bf19955137e56894.png"
+              alt="Agent to Agent"
+            />
+            <div class="text">
+              <h2>Agent to Agent</h2>
+              <p>
+                Agents can send and receive requests, share listings, and
+                co-broker deals directly with other agents.
+              </p>
+              <span class="tag">COMING SOON</span>
+            </div>
+          </div>
+        </div>
+
+        <button id="prevBtn" class="nav-btn">‹</button>
+        <button id="nextBtn" class="nav-btn">›</button>
       </div>
     </section>
+
+    <!-- <div class="features-slider">
+
+  <div class="slider-wrapper">
+    <div class="feature">.  <div class="feature feature-left" data-aos="fade-up">
+          <img
+            src="./assets/imgs/afc592592712be88789ce1581a04036120c334c9.png"
+            alt="New Launch"
+          />
+          <div class="text">
+            <h2>New launch</h2>
+            <p>
+              Browse a wide range of apartments, villas, and commercial spaces
+              across the UAE.
+            </p>
+            <span class="tag">COMING SOON</span>
+          </div>
+        </div>..</div>
+    <div class="feature">..  <div class="feature feature-left" data-aos="fade-up">
+          <img
+            src="./assets/imgs/afc592592712be88789ce1581a04036120c334c9.png"
+            alt="New Launch"
+          />
+          <div class="text">
+            <h2>New launch</h2>
+            <p>
+              Browse a wide range of apartments, villas, and commercial spaces
+              across the UAE.
+            </p>
+            <span class="tag">COMING SOON</span>
+          </div>
+        </div>.</div>
+    <div class="feature">.  <div class="feature feature-left" data-aos="fade-up">
+          <img
+            src="./assets/imgs/afc592592712be88789ce1581a04036120c334c9.png"
+            alt="New Launch"
+          />
+          <div class="text">
+            <h2>New launch</h2>
+            <p>
+              Browse a wide range of apartments, villas, and commercial spaces
+              across the UAE.
+            </p>
+            <span class="tag">COMING SOON</span>
+          </div>
+        </div>..</div>
+    <div class="feature">.  <div class="feature feature-left" data-aos="fade-up">
+          <img
+            src="./assets/imgs/afc592592712be88789ce1581a04036120c334c9.png"
+            alt="New Launch"
+          />
+          <div class="text">
+            <h2>New launch</h2>
+            <p>
+              Browse a wide range of apartments, villas, and commercial spaces
+              across the UAE.
+            </p>
+            <span class="tag">COMING SOON</span>
+          </div>
+        </div>..</div>
+    <div class="feature">..  <div class="feature feature-left" data-aos="fade-up">
+          <img
+            src="./assets/imgs/afc592592712be88789ce1581a04036120c334c9.png"
+            alt="New Launch"
+          />
+          <div class="text">
+            <h2>New launch</h2>
+            <p>
+              Browse a wide range of apartments, villas, and commercial spaces
+              across the UAE.
+            </p>
+            <span class="tag">COMING SOON</span>
+          </div>
+        </div>.</div>
+  </div>
+
+  <button id="prevBtn" class="nav-btn">‹</button>
+  <button id="nextBtn" class="nav-btn">›</button>
+
+</div> -->
+
     <!-- ========================================== PRICING ========================================== -->
 
     <section id="pricing5" class="pricing-section55" data-aos="fade-up">
-      <div class="container">
+      <div class="container-pricing-section">
         <div style="padding: 20px; text-align: center">
           <h2 class="special-text">Our Awesome Pricing Plans</h2>
           <p class="subtitle">
@@ -526,6 +705,88 @@
       easing: "ease",
       once: false,
       mirror: false,
+    });
+  </script>
+
+  <script>
+    const wrapper = document.querySelector(".slider-wrapper");
+    const slides = document.querySelectorAll(".feature");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+
+    let index = 1;
+    let isTransitioning = false;
+
+    function isMobile() {
+      return window.innerWidth <= 900;
+    }
+
+    let allSlides = slides;
+
+    // Setup only for mobile
+    function initMobileLoop() {
+      if (!isMobile()) return;
+
+      const firstClone = slides[0].cloneNode(true);
+      const lastClone = slides[slides.length - 1].cloneNode(true);
+      firstClone.id = "first-clone";
+      lastClone.id = "last-clone";
+
+      wrapper.appendChild(firstClone);
+      wrapper.insertBefore(lastClone, wrapper.firstChild);
+
+      allSlides = document.querySelectorAll(".feature");
+      wrapper.style.transform = translateX(`-${index * 100}%`);
+    }
+
+    initMobileLoop();
+
+    function updateSlider() {
+      if (!isMobile()) return; // Stop slider on desktop
+
+      wrapper.style.transition = "transform .35s ease";
+      wrapper.style.transform = translateX(`-${index * 100}%`);
+      isTransitioning = true;
+    }
+
+    nextBtn.addEventListener("click", () => {
+      if (!isMobile() || isTransitioning) return;
+      index++;
+      updateSlider();
+    });
+
+    prevBtn.addEventListener("click", () => {
+      if (!isMobile() || isTransitioning) return;
+      index--;
+      updateSlider();
+    });
+
+    wrapper.addEventListener("transitionend", () => {
+      if (!isMobile()) return;
+
+      isTransitioning = false;
+
+      if (allSlides[index].id === "first-clone") {
+        wrapper.style.transition = "none";
+        index = 1;
+        wrapper.style.transform = translateX(`-${index * 100}%`);
+      }
+
+      if (allSlides[index].id === "last-clone") {
+        wrapper.style.transition = "none";
+        index = allSlides.length - 2;
+        wrapper.style.transform = translateX(`-${index * 100}%`);
+      }
+    });
+
+    //  Fix design when resizing to desktop
+    window.addEventListener("resize", () => {
+      if (!isMobile()) {
+        wrapper.style.transition = "none";
+        wrapper.style.transform = "none";
+      } else {
+        window.location.reload();
+      }
     });
   </script>
 </html>
